@@ -78,6 +78,7 @@ textarea {
   padding: 15px 50px;
   background-color: transparent;
   font-size: 16px;
+  font-weight: 200;
   color: #333333;
   border-width: 1px;
   z-index: 2;
@@ -93,6 +94,12 @@ textarea {
     top: 15px;
     left: calc(50% - 130px);
     width: 50px;
+  }
+  .contact_text {
+    margin: 100px auto;
+  }
+  textarea {
+    height: 150px;
   }
 }
 
