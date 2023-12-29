@@ -481,13 +481,13 @@
   }
   .works_mockup {
     max-width: 315px;
-    margin: 150px auto 80px;
+    margin: 100px auto 80px;
   }
   .caption {
     max-width: 315px;
   }
   .works_item {
-    margin: 50px auto 150px;
+    margin: 50px auto 100px;
   }
   .works_item li {
     max-width: 315px;
@@ -599,4 +599,9 @@
   top: 50%;
   left: calc(50% - 100px);
   transform: translate(-50%, -50%);
+}
+@media screen and (max-width: 767px) {
+  .back {
+    margin-top: 160px;
+  }
 }
