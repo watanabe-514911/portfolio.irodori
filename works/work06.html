@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Works | Chiai Watanabe Portfolio</title>
+    <meta name="description" content="制作実績詳細。架空LPの作成しました。">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <!-- JQery読み込み -->
+    <script src=" https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- slick読み込み.JQeryの後に入れる -->
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="../js/script.js"></script>
+</head>
+
+<body>
+    <header id="header" class="header">
+        <h1 class="header_logo"><a href="../index.html">Chiai Watanabe<br>Portfolio</a></h1>
+        <nav class="pc_nav">
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../about/index.html">About</a></li>
+                <li><a href="./index.html">Works</a></li>
+                <li><a href="../contact/contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="sp_btn"><span></span></div>
+
+        <nav class="sp_nav">
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../about/index.html">About</a></li>
+                <li><a href="./index.html">Works</a></li>
+                <li><a href="../contact/contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- ここから -->
+
+    <main>
+        <div id="works">
+            <div><img src="images/works.jpg" alt="青い花の写真"></div>
+            <h2>Works</h2>
+        </div>
+
+        <div id="sp_works">
+            <img src="images/sp_works@2x.jpg" alt="青い花の写真">
+            <h2>Works</h2>
+        </div>
+
+        <div class="works_mockup">
+            <img src="images/works_skincare_1.jpg" alt="基礎化粧品LP">
+        </div>
+
+        <h3 class="caption">基礎化粧品LP</h3>
+        <ul class="works_item">
+            <li><span>カテゴリー</span><span>Webデザイン（架空サイト）</span></li>
+            <li><span>制作範囲</span><span>デザイン、素材加工</span></li>
+            <li><span>使用ツール</span><span>Figma / Photshop</span></li>
+            <li><span>制作期間</span><span>約2週間</span></li>
+        </ul>
+
+        <div class="concept">
+            <img class="fade-in conceptpoint" src="images/works_skincare.png" alt="背景">
+            <p class="heading">コンセプトと制作のポイント</p>
+            <p class="works_text">
+                オーダーメイドやカスタマイズが好きで、他の人と同じものは好まない30代女性に向けたスキンケアセットの提案。<br>
+                紫をイメージカラーに上品なサイトに仕上げたいとのご要望。<br>
+                <br>
+                <br>
+                シンプルでサイト内を迷いなく移動できる作りを意識した。<br>
+                申し込みボタンにアクセントカラーを使用し誘導を促した。
+
+            </p>
+        </div>
+        <div class="row">
+            <div><img src="images/skincare_pc.jpg" alt="基礎化粧品LP PC版"></div>
+            <div><img src="images/skincare_sp.jpg" alt="基礎化粧品LP SP版"> </div>
+        </div>
+
+        <ul class="accordion-area">
+            <li>
+                <p class="title">パソコン表示用のデザインを見る</p>
+                <div class="box"><img src="images/skincare_pc.jpg" alt="基礎化粧品LP PC版"></div>
+            </li>
+            <li>
+                <p class="title">スマホ示用のデザインを見る</p>
+                <div class="box"><img src="images/skincare_sp.jpg" alt="基礎化粧品LP SP版"></div>
+            </li>
+        </ul>
+
+
+
+        <!-- 共通 -->
+
+        <div class="btnback">
+            <img class="fade-in" src="images/back.png" alt="花束">
+            <a class="back" href="./index.html">一覧に戻る</a>
+        </div>
+
+        <div class="totop_wrap">
+            <div class="totop"><a href="#header">Top</a></div>
+        </div>
+
+    </main>
+    <footer>
+        <nav class="footer_nav">
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../about/index.html">About</a></li>
+                <li><a href="./index.html">Works</a></li>
+                <li><a href="../contact/contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <p class="copyright">
+            <small>©ChiaiWatanabe All rights reserved.</small>
+        </p>
+    </footer>
+
+    <script>
+        $(function () {
+            //ここの中に記述
+            $('.sp_btn, .sp_nav ul li').on('click', function () {
+                $('.sp_nav').fadeToggle();
+                $('.sp_btn').toggleClass('open')
+            });
+        });
+
+        $('.title').on('click', function () {//タイトル要素をクリックしたら
+            $('.box').slideUp(500);//クラス名.boxがついたすべてのアコーディオンを閉じる
+
+            var findElm = $(this).next(".box");//タイトル直後のアコーディオンを行うエリアを取得
+
+            if ($(this).hasClass('close')) {//タイトル要素にクラス名closeがあれば
+                $(this).removeClass('close');//クラス名を除去    
+            } else {//それ以外は
+                $('.close').removeClass('close'); //クラス名closeを全て除去した後
+                $(this).addClass('close');//クリックしたタイトルにクラス名closeを付与し
+                $(findElm).slideDown(500);//アコーディオンを開く
+            }
+            $('.box').parent().toggleClass('is-wide');
+        });
+    </script>
+</body>
+
+</html>

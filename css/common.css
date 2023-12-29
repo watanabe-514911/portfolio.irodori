@@ -1,0 +1,355 @@
+@charset "utf-8";
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400&family=Lato:wght@100;300;400;700&display=swap");
+
+/* cssリセット */
+
+/*利用するタグによってこちらの内容は増やす*/
+
+html,
+body,
+h1,
+h2,
+h3,
+p,
+dl,
+dt,
+dd,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+
+  font-feature-settings: "palt";
+
+  /*デフォルトの文字色、font-familyを予め当てておく*/
+  color: #333;
+  font-family: "yu-gothic-pr6n", "游ゴシック体", YuGothic, "游ゴシック",
+    "Yu Gothic", sans-serif;
+}
+
+a {
+  /*下線を消す*/
+  text-decoration: none;
+
+  /*色を消す*/
+  color: inherit;
+  transition: 0.3s;
+}
+
+ul {
+  /*左の「・」を消す*/
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: bottom;
+  border: none;
+}
+
+/* フェードインアニメーション */
+.fade-in {
+  opacity: 0;
+  transition-duration: 500ms;
+  transition-property: opacity, transform;
+}
+
+.fade-in-up {
+  transform: translate(0, 50px);
+}
+
+.fade-in-down {
+  transform: translate(0, -50px);
+}
+
+.fade-in-left {
+  transform: translate(-50px, 0);
+}
+
+.fade-in-right {
+  transform: translate(50px, 0);
+}
+
+.scroll-in {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+
+/* ヘッダー */
+
+.header {
+  position: relative;
+  top: 0;
+  max-width: 1000px;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  width: 100%;
+  box-sizing: border-box;
+}
+.header_logo {
+  margin-left: 20px;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 1.2;
+}
+.pc_nav ul {
+  display: flex;
+  margin-right: 20px;
+}
+.pc_nav ul li {
+  padding-left: 55px;
+  text-align: center;
+  background-color: transparent;
+  font-size: 15px;
+}
+/* ヘッダーホバーアニメーション */
+.pc_nav ul li a {
+  position: relative;
+}
+.pc_nav ul li a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: #333;
+  transition: all 0.3s;
+  transform: scale(0, 1);
+  transform-origin: left top;
+}
+.pc_nav ul li a:hover::after {
+  transform: scale(1, 1);
+}
+.sp_btn {
+  display: none;
+}
+.sp_nav {
+  display: none;
+}
+@media screen and (max-width: 767px) {
+  .pc_nav {
+    display: none;
+  }
+  .sp_btn {
+    position: absolute;
+    top: 20px;
+    right: 25px;
+    display: block;
+    height: 23px;
+    cursor: pointer;
+    z-index: 3;
+  }
+
+  .sp_btn span {
+    position: relative;
+    top: 10px;
+    display: block;
+    width: 33px;
+    height: 2px;
+    border-radius: 2px;
+    background: #333;
+    transition: 0.3s;
+  }
+  .sp_btn span::before,
+  .sp_btn span::after {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 33px;
+    height: 2px;
+    border-radius: 2px;
+    background: #333;
+    transition: 0.5s;
+  }
+  .sp_btn span::before {
+    bottom: 10px;
+  }
+  .sp_btn span::after {
+    top: 10px;
+  }
+
+  /* ハンバーガー閉じる */
+  .sp_btn.open span {
+    background: transparent;
+  }
+  .sp_btn.open span::before {
+    bottom: 0;
+    transform: rotate(45deg);
+  }
+  .sp_btn.open span::after {
+    top: 0;
+    transform: rotate(135deg);
+  }
+
+  /* ハンバーガーメニュー */
+  .sp_nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(255, 255, 255, 0.88);
+    z-index: 2;
+  }
+  .sp_nav ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+  .sp_nav ul li {
+    color: #333;
+    font-size: 18px;
+    line-height: 5.5;
+    font-family: "Lato", sans-serif;
+  }
+}
+
+/* 全体 */
+main {
+  margin: 0 auto;
+}
+
+/* 見出し画像 */
+h2 {
+  position: absolute;
+  top: 50%;
+  left: calc(50% - 16%);
+  transform: translate(-50%, -50%);
+  font-family: "Lato", sans-serif;
+  font-size: 55px;
+  font-weight: 200;
+}
+@media screen and (max-width: 767px) {
+  h2 {
+    left: calc(50% - 80px);
+    font-size: 40px;
+  }
+}
+
+/* フッターらへん */
+.btnmessage,
+.btnmessage_home {
+  position: relative;
+}
+.message {
+  display: block;
+  text-align: center;
+  position: relative;
+  margin: 270px auto 130px;
+  padding: 16px 0;
+  width: 200px;
+  border: 1px solid;
+  font-size: 16px;
+}
+.btnmessage img {
+  position: absolute;
+  top: 50%;
+  left: calc(50% - 100px);
+  transform: translate(-50%, -50%);
+  width: 145px;
+}
+.message:hover {
+  opacity: 0.5;
+}
+.totop {
+  text-align: center;
+}
+.totop a {
+  font-size: 14px;
+}
+/* 最上部へホバーアニメーション */
+.totop_wrap {
+  position: relative;
+  margin: 0 auto;
+  width: 22px;
+  height: 15px;
+}
+.totop {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.totop a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: #333;
+  transition: all 0.3s;
+  transform: scale(0, 1);
+  transform-origin: left top;
+}
+.totop a:hover::after {
+  transform: scale(1, 1);
+}
+footer {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1000px;
+  margin: 140px auto 70px;
+}
+.footer_nav ul {
+  display: flex;
+  margin-left: 20px;
+}
+.footer_nav ul li {
+  padding-right: 55px;
+  font-size: 15px;
+}
+/* フッターホバーアニメーション */
+.footer_nav ul li a {
+  position: relative;
+}
+.footer_nav ul li a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: #333;
+  transition: all 0.3s;
+  transform: scale(0, 1);
+  transform-origin: left top;
+}
+.footer_nav ul li a:hover::after {
+  transform: scale(1, 1);
+}
+.copyright {
+  margin-right: 20px;
+  font-size: 12px;
+}
+@media screen and (max-width: 767px) {
+  .totop_box {
+    display: none;
+  }
+  footer {
+    display: block;
+    text-align: center;
+    max-width: 315px;
+    margin: 50px auto 30px;
+  }
+  .footer_nav ul {
+    display: block;
+    margin: 0 auto;
+  }
+  .footer_nav ul li {
+    margin-left: 0;
+    padding: 0;
+    line-height: 3;
+  }
+  .copyright {
+    margin-top: 50px;
+    margin-right: 0;
+  }
+}

@@ -1,0 +1,602 @@
+#works {
+  position: relative;
+}
+#works img {
+  position: relative;
+  width: 100%;
+}
+.works_pic {
+  margin-bottom: 200px;
+}
+#sp_works {
+  display: none;
+  position: relative;
+}
+@media screen and (max-width: 767px) {
+  #works {
+    display: none;
+  }
+  #sp_works {
+    display: block;
+    width: 100%;
+  }
+}
+
+.containar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.containar div {
+  margin-top: 180px;
+}
+.ttl {
+  margin: 10px 0;
+  font-size: 15px;
+}
+.ttl li {
+  margin-bottom: 5px;
+  margin-left: 20px;
+}
+.springsale,
+.newapp,
+.burger,
+.workers,
+.salon,
+.skincare,
+.cafe {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 20px;
+  width: 430px;
+  height: 300px;
+  background-color: #f9f9f9;
+}
+.springsale::before {
+  content: "";
+  position: absolute;
+  transform: translate(-50%, -50%);
+  width: 0;
+  height: 0;
+  top: 50%;
+  left: 50%;
+  border-radius: 90%;
+  opacity: 0;
+  transition: 1s;
+}
+.springsale:hover::before {
+  width: 100%;
+  height: 100%;
+  border-radius: 0;
+  background-color: #f4e9eb;
+  opacity: 1;
+}
+.springsale a {
+  z-index: 1;
+}
+.newapp::before {
+  content: "";
+  position: absolute;
+  transform: translate(-50%, -50%);
+  width: 0;
+  height: 0;
+  top: 50%;
+  left: 50%;
+  border-radius: 90%;
+  opacity: 0;
+  transition: 1s;
+}
+.newapp:hover::before {
+  width: 100%;
+  height: 100%;
+  border-radius: 0;
+  background-color: #eae4dc;
+  opacity: 1;
+}
+.newapp a {
+  z-index: 1;
+}
+.burger::before {
+  content: "";
+  position: absolute;
+  transform: translate(-50%, -50%);
+  width: 0;
+  height: 0;
+  top: 50%;
+  left: 50%;
+  border-radius: 90%;
+  opacity: 0;
+  transition: 1s;
+}
+.burger:hover::before {
+  width: 100%;
+  height: 100%;
+  border-radius: 0;
+  background-color: #cccccc;
+  opacity: 1;
+}
+.burger a {
+  z-index: 1;
+}
+.workers::before {
+  content: "";
+  position: absolute;
+  transform: translate(-50%, -50%);
+  width: 0;
+  height: 0;
+  top: 50%;
+  left: 50%;
+  border-radius: 90%;
+  opacity: 0;
+  transition: 1s;
+}
+.workers:hover::before {
+  width: 100%;
+  height: 100%;
+  border-radius: 0;
+  background-color: #f9e7af;
+  opacity: 1;
+}
+.workers a {
+  z-index: 1;
+}
+.salon::before {
+  content: "";
+  position: absolute;
+  transform: translate(-50%, -50%);
+  width: 0;
+  height: 0;
+  top: 50%;
+  left: 50%;
+  border-radius: 90%;
+  opacity: 0;
+  transition: 1s;
+}
+.salon:hover::before {
+  width: 100%;
+  height: 100%;
+  border-radius: 0;
+  background-color: #e5dcda;
+  opacity: 1;
+}
+.salon a {
+  z-index: 1;
+}
+.skincare::before {
+  content: "";
+  position: absolute;
+  transform: translate(-50%, -50%);
+  width: 0;
+  height: 0;
+  top: 50%;
+  left: 50%;
+  border-radius: 90%;
+  opacity: 0;
+  transition: 1s;
+}
+.skincare:hover::before {
+  width: 100%;
+  height: 100%;
+  border-radius: 0;
+  background-color: #e9e9f2;
+  opacity: 1;
+}
+.skincare a {
+  z-index: 1;
+}
+.cafe::before {
+  content: "";
+  position: absolute;
+  transform: translate(-50%, -50%);
+  width: 0;
+  height: 0;
+  top: 50%;
+  left: 50%;
+  border-radius: 50%;
+  opacity: 0;
+  transition: 1s;
+}
+.cafe:hover::before {
+  width: 100%;
+  height: 100%;
+  border-radius: 0;
+  background-color: #fff5e9;
+  opacity: 1;
+}
+.cafe a {
+  z-index: 1;
+}
+.sp_containar {
+  display: none;
+}
+@media screen and (max-width: 767px) {
+  .containar {
+    display: none;
+  }
+  .sp_containar {
+    display: block;
+    max-width: 315px;
+    margin: 150px auto 0;
+  }
+  .sp_ttl {
+    text-align: center;
+    margin: 20px 0 70px;
+    font-size: 15px;
+  }
+  .sp_springsale img {
+    max-width: 70%;
+    text-align: center;
+    margin: 0 auto;
+  }
+  .sp_springsale {
+    display: flex;
+    position: relative;
+    align-items: center;
+    width: 315px;
+    height: 200px;
+    background-color: #f4e9eb;
+  }
+  .sp_springsale::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+  }
+  .sp_springsale a {
+    text-align: center;
+    z-index: 1;
+  }
+  .sp_newapp img {
+    max-width: 70%;
+    text-align: center;
+    margin: 0 auto;
+  }
+  .sp_newapp {
+    display: flex;
+    position: relative;
+    align-items: center;
+    width: 315px;
+    height: 200px;
+    background-color: #eae4dc;
+  }
+  .sp_newapp::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+  }
+  .sp_newapp a {
+    text-align: center;
+    z-index: 1;
+  }
+  .sp_burger img {
+    max-width: 90%;
+    text-align: center;
+    margin: 0 auto;
+  }
+  .sp_burger {
+    display: flex;
+    position: relative;
+    align-items: center;
+    width: 315px;
+    height: 200px;
+    background-color: #cccccc;
+  }
+  .sp_burger::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+  }
+  .sp_burger a {
+    text-align: center;
+    z-index: 1;
+  }
+  .sp_workers img {
+    max-width: 90%;
+    text-align: center;
+    margin: 0 auto;
+  }
+  .sp_workers {
+    display: flex;
+    position: relative;
+    align-items: center;
+    width: 315px;
+    height: 200px;
+    background-color: #f9e7af;
+  }
+  .sp_workers::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+  }
+  .sp_workers a {
+    text-align: center;
+    z-index: 1;
+  }
+  .sp_salon img {
+    max-width: 90%;
+    text-align: center;
+    margin: 0 auto;
+  }
+  .sp_salon {
+    display: flex;
+    position: relative;
+    align-items: center;
+    width: 315px;
+    height: 200px;
+    background-color: #e5dcda;
+  }
+  .sp_salon::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+  }
+  .sp_salon a {
+    text-align: center;
+    z-index: 1;
+  }
+  .sp_skincare img {
+    max-width: 90%;
+    text-align: center;
+    margin: 0 auto;
+  }
+  .sp_skincare {
+    display: flex;
+    position: relative;
+    align-items: center;
+    width: 315px;
+    height: 200px;
+    background-color: #e9e9f2;
+  }
+  .sp_skincare::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+  }
+  .sp_skincare a {
+    text-align: center;
+    z-index: 1;
+  }
+  .sp_cafe img {
+    max-width: 90%;
+    text-align: center;
+    margin: 0 auto;
+  }
+  .sp_cafe {
+    display: flex;
+    position: relative;
+    align-items: center;
+    width: 315px;
+    height: 200px;
+    background-color: #fff5e9;
+  }
+  .sp_cafe::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+  }
+  .sp_cafe a {
+    text-align: center;
+    z-index: 1;
+  }
+}
+/* works詳細 ページ*/
+.works_mockup {
+  max-width: 1000px;
+  margin: 230px auto 100px;
+}
+.caption {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 10px 0 10px 10px;
+  font-size: 20px;
+  font-weight: 400;
+  border-bottom: solid 1px;
+}
+.works_item {
+  max-width: 500px;
+  list-style: none;
+  margin: 80px auto 230px;
+  font-size: 16px;
+}
+.works_item li {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+.works_item li span {
+  display: inline-block;
+  background: #fff;
+  padding: 20px 10px;
+  z-index: 1;
+}
+.works_item li::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 1px;
+  border-top: 4px dotted #666;
+  z-index: 0;
+}
+.works_img {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 260px;
+}
+.concept {
+  position: relative;
+}
+.conceptpoint {
+  position: absolute;
+  top: 0;
+  left: calc(50% - 255px);
+  transform: translate(-50%, -50%);
+}
+.heading {
+  position: relative;
+  max-width: 500px;
+  margin: 0 auto 40px;
+  font-size: 18px;
+}
+.works_text {
+  max-width: 500px;
+  margin: 0 auto 200px;
+  font-size: 15px;
+  line-height: 1.6;
+}
+.works_text span {
+  display: block;
+  max-width: 500px;
+  border-bottom: solid 1px;
+}
+.column {
+  text-align: center;
+}
+.row {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+.accordion-area {
+  display: none;
+}
+@media screen and (max-width: 767px) {
+  .row,
+  .column {
+    display: none;
+  }
+  .works_mockup {
+    max-width: 315px;
+    margin: 150px auto 80px;
+  }
+  .caption {
+    max-width: 315px;
+  }
+  .works_item {
+    margin: 50px auto 150px;
+  }
+  .works_item li {
+    max-width: 315px;
+    font-size: 14px;
+  }
+  .heading {
+    max-width: 315px;
+  }
+  .conceptpoint {
+    top: 2%;
+    left: calc(50% - 155px);
+    width: 50px;
+  }
+  .works_text {
+    max-width: 315px;
+  }
+  .works_text span {
+    display: block;
+    max-width: 315px;
+    border-bottom: solid 1px;
+  }
+
+  /* アコーディオン */
+  .accordion-area {
+    display: block;
+    list-style: none;
+    width: 90%;
+    max-width: 330px;
+    margin: 40px auto;
+  }
+  .accordion-area li {
+    margin: 10px 20px;
+    border: 1px solid #333;
+  }
+  .accordion-area li.is-wide {
+    margin: 10px 0;
+  }
+
+  /*アコーディオンタイトル*/
+  .title {
+    position: relative; /*+マークの位置基準とするためrelative指定*/
+    font-size: 14px;
+    padding: 20px 40px 20px 50px;
+    transition: all 0.5s ease;
+  }
+
+  /*アイコンの＋と×*/
+  .title::before,
+  .title::after {
+    position: absolute;
+    content: "";
+    width: 15px;
+    height: 2px;
+    background-color: #333;
+  }
+  .title::before {
+    top: 48%;
+    left: 15px;
+    transform: rotate(0deg);
+  }
+  .title::after {
+    top: 48%;
+    left: 15px;
+    transform: rotate(90deg);
+  }
+
+  /*closeというクラスがついたら形状変化*/
+
+  .title.close::before {
+    transform: rotate(45deg);
+  }
+
+  .title.close::after {
+    transform: rotate(-45deg);
+  }
+
+  /*アコーディオンで現れるエリア*/
+  .box {
+    display: none; /*はじめは非表示*/
+    max-width: 315px;
+    text-align: center;
+    margin: 0px auto;
+  }
+  .box img {
+    max-width: 95%;
+  }
+  .box.is-wide {
+    max-width: 330px;
+  }
+}
+.btnback {
+  position: relative;
+}
+.back {
+  display: block;
+  position: relative;
+  text-align: center;
+  margin: 270px auto 130px;
+  padding: 16px 0;
+  width: 200px;
+  border: 1px solid;
+  font-size: 16px;
+}
+.back:hover {
+  opacity: 0.5;
+}
+.btnback img {
+  position: absolute;
+  top: 50%;
+  left: calc(50% - 100px);
+  transform: translate(-50%, -50%);
+}

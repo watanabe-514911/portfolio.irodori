@@ -1,0 +1,215 @@
+#about {
+  position: relative;
+}
+#about img {
+  position: relative;
+  width: 100%;
+}
+.about {
+  margin: 0 20px;
+}
+#sp_about {
+  display: none;
+  position: relative;
+}
+@media screen and (max-width: 767px) {
+  #about {
+    display: none;
+  }
+  #sp_about {
+    display: block;
+    width: 100%;
+  }
+}
+
+.about_heading {
+  text-align: center;
+  margin: 300px 0 100px;
+}
+.about_heading h3 {
+  display: inline-block;
+  padding: 0 20px 10px;
+  font-size: 35px;
+  font-weight: 200;
+  border-bottom: 1px solid;
+}
+.profile_pic {
+  width: 50%;
+}
+.about_container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.name {
+  position: relative;
+  max-width: 315px;
+  margin: 30px 20px;
+}
+.objname {
+  position: absolute;
+  top: -170%;
+  left: calc(-30% + 20px);
+  transform: translate(50%, 50%);
+}
+.myname {
+  position: relative;
+  font-size: 23px;
+}
+.about_text {
+  width: 500px;
+  top: 70px;
+  margin-left: 20px;
+  font-size: 15px;
+  line-height: 1.86;
+}
+@media screen and (max-width: 767px) {
+  .about_heading h3 {
+    font-size: 22px;
+  }
+  .about_heading {
+    margin: 150px 0 70px;
+  }
+  .about_container {
+    display: block;
+    max-width: 315px;
+    margin: 0 auto;
+  }
+  .profile_pic {
+    width: 100%;
+  }
+  .name {
+    margin: 10px 0;
+  }
+  .myname {
+    font-size: 20px;
+  }
+  .aboutme_wrap {
+    margin: 0 auto;
+  }
+  .about_text {
+    width: 100%;
+    margin: 0;
+  }
+  .objname {
+    top: -140%;
+    left: calc(-25% + 30px);
+    width: 60px;
+  }
+}
+
+/* 私にできること */
+.skills_container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 600px;
+  margin: 0 auto;
+}
+.design,
+.coding {
+  text-align: center;
+}
+.design img,
+.coding img {
+  max-width: 200px;
+}
+.skills_title {
+  position: relative;
+  margin: 60px 0 30px;
+}
+.objdesign,
+.objcoding {
+  position: absolute;
+  left: 40px;
+  top: -15px;
+}
+.skills_title P {
+  position: relative;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 23px;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+}
+.tool {
+  font-size: 17px;
+}
+.skills_text {
+  margin: 30px 0;
+}
+.skills_text p {
+  max-width: 220px;
+  font-size: 15px;
+  line-height: 1.86;
+}
+@media screen and (max-width: 767px) {
+  .skills_container {
+    display: block;
+    max-width: 315px;
+    margin: 0 auto;
+  }
+  .design img,
+  .coding img {
+    max-width: 160px;
+  }
+  .skills_title {
+    margin: 30px 0 20px;
+  }
+  .skills_title p {
+    font-size: 20px;
+  }
+  .skills_text p {
+    margin: 0 auto;
+  }
+  .design {
+    margin-bottom: 80px;
+  }
+  .objdesign,
+  .objcoding {
+    position: absolute;
+    left: 90px;
+    top: -15px;
+  }
+}
+/* 私ってこんな人 */
+.about_list {
+  max-width: 500px;
+  margin: 0 auto;
+}
+.about_list_text {
+  margin: 15px 0 80px;
+  font-size: 15px;
+  line-height: 1.86;
+}
+.about_item {
+  position: relative;
+}
+.ttl {
+  position: relative;
+  margin: 80px 0 0 0;
+  font-size: 23px;
+}
+.objlist {
+  position: absolute;
+  top: -30px;
+  left: -40px;
+  z-index: 0;
+}
+@media screen and (max-width: 767px) {
+  .about_list {
+    max-width: 315px;
+  }
+  .ttl {
+    font-size: 20px;
+  }
+  .about_list_text {
+    margin: 20px 0 60px;
+  }
+  .objlist {
+    top: -15px;
+    left: -15px;
+    width: 55px;
+  }
+}

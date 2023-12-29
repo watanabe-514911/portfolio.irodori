@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Works | Chiai Watanabe Portfolio</title>
+    <meta name="description" content="制作実績詳細。バナートレースをしました。">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <!-- JQery読み込み -->
+    <script src=" https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- slick読み込み.JQeryの後に入れる -->
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="../js/script.js"></script>
+</head>
+
+<body>
+    <header id="header" class="header">
+        <h1 class="header_logo"><a href="../index.html">Chiai Watanabe<br>Portfolio</a></h1>
+        <nav class="pc_nav">
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../about/index.html">About</a></li>
+                <li><a href="./index.html">Works</a></li>
+                <li><a href="../contact/contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="sp_btn"><span></span></div>
+
+        <nav class="sp_nav">
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../about/index.html">About</a></li>
+                <li><a href="./index.html">Works</a></li>
+                <li><a href="../contact/contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- ここから -->
+
+    <main>
+        <div id="works">
+            <div><img src="images/works.jpg" alt="青い花の写真"></div>
+            <h2>Works</h2>
+        </div>
+
+        <div id="sp_works">
+            <img src="images/sp_works@2x.jpg" alt="青い花の写真">
+            <h2>Works</h2>
+        </div>
+
+        <div class="works_mockup">
+            <img src="images/works_springsale.jpg" alt="携帯ショップバナー">
+        </div>
+
+        <h3 class="caption">携帯ショップバナー</h3>
+        <ul class="works_item">
+            <li><span>カテゴリー</span><span>Webデザイン（トレース）</span></li>
+            <li><span>制作範囲</span><span>素材加工</span></li>
+            <li><span>使用ツール</span><span>Photoshop / Illustrator</span></li>
+            <li><span>制作期間</span><span>約1週間</span></li>
+        </ul>
+        <div class="works_img">
+            <img src="images/springsale.jpg" alt="携帯ショップバナー">
+        </div>
+
+
+        <!-- 共通 -->
+        <div class="btnback">
+            <img class="fade-in" src="images/back.png" alt="花束">
+            <a class="back" href="./index.html">一覧に戻る</a>
+        </div>
+
+        <div class="totop_wrap">
+            <div class="totop"><a href="#header">Top</a></div>
+        </div>
+
+    </main>
+
+    <footer>
+        <nav class="footer_nav">
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../about/index.html">About</a></li>
+                <li><a href="./index.html">Works</a></li>
+                <li><a href="../contact/contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <p class="copyright">
+            <small>©ChiaiWatanabe All rights reserved.</small>
+        </p>
+    </footer>
+
+    <script>
+        $(function () {
+            //ここの中に記述
+            $('.sp_btn, .sp_nav ul li').on('click', function () {
+                $('.sp_nav').fadeToggle();
+                $('.sp_btn').toggleClass('open')
+            });
+        });
+    </script>
+</body>
+
+</html>

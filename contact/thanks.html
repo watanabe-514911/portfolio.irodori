@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Chiai Watanabe Portfolio</title>
+    <meta name="description" content="お問合せありがとうございます！">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <!-- JQery読み込み -->
+    <script src=" https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- slick読み込み.JQeryの後に入れる -->
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="../js/script.js"></script>
+</head>
+
+<body>
+    <header id="header" class="header">
+        <h1 class="header_logo"><a href="../index.html">Chiai Watanabe<br>Portfolio</a></h1>
+        <nav class="pc_nav">
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../about/index.html">About</a></li>
+                <li><a href="../works/index.html">Works</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="sp_btn"><span></span></div>
+
+        <nav class="sp_nav">
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../about/index.html">About</a></li>
+                <li><a href="../index.html">Works</a></li>
+                <li><a href="./contact/contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- ここから -->
+
+    <main>
+        <div id="contact">
+            <div><img src="images/contact.jpg" alt="黄色い花の写真"></div>
+            <h2>Contact</h2>
+        </div>
+
+        <div id="sp_contact">
+            <div><img src="images/sp_contact@2x.jpg" alt="黄色い花の写真"></div>
+            <h2>Contact</h2>
+        </div>
+
+        <div class="thanks_img">
+            <img src="images/thanks.png" alt="ありがとうございます！">
+        </div>
+        <p class="thanks_text">
+            お問合せありがとうございます。<br>
+            通常2、3日以内にお返事させていただきます。<br>
+            5日経っても返事がない場合、メッセージが届いでいない可能性がありますので、<br>
+            お手数ですが再度ご連絡をお願いいたします。<br>
+        </p>
+
+
+
+        <!-- 共通 -->
+        <div class="totop_wrap">
+            <div class="totop"><a href="../index.html">Home</a></div>
+        </div>
+    </main>
+
+    <footer>
+        <nav class="footer_nav">
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../about/index.html">About</a></li>
+                <li><a href="../works/index.html">Works</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <p class="copyright">
+            <small>©ChiaiWatanabe All rights reserved.</small>
+        </p>
+    </footer>
+
+    <script>
+        $(function () {
+            //ここの中に記述
+            $('.sp_btn, .sp_nav ul li').on('click', function () {
+                $('.sp_nav').fadeToggle();
+                $('.sp_btn').toggleClass('open')
+            });
+        });
+    </script>
+</body>
+
+</html>
