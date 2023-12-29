@@ -530,7 +530,7 @@
   .title {
     position: relative; /*+マークの位置基準とするためrelative指定*/
     font-size: 14px;
-    padding: 20px 20px 50px;
+    padding: 20px 10px 20px 40px;
     transition: all 0.5s ease;
   }
 
