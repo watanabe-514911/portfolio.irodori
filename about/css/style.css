@@ -122,8 +122,9 @@
 .objdesign,
 .objcoding {
   position: absolute;
-  left: 40px;
+  left: 105px;
   top: -15px;
+  z-index: 0;
 }
 .skills_title P {
   position: relative;
@@ -206,7 +207,7 @@
     margin-top: 50px;
   }
   .about_list_text {
-    margin-top: 20px;
+    margin-top: 25px;
   }
   .objlist {
     top: -15px;

@@ -91,7 +91,9 @@ img {
   box-sizing: border-box;
 }
 .header_logo {
-  margin-left: 20px;
+  margin-left: 25px;
+  top: 50%;
+  transform: translate(0, -50%);
   font-family: "Josefin Sans", sans-serif;
   font-weight: 300;
   font-size: 20px;
@@ -137,12 +139,13 @@ img {
     display: none;
   }
   .sp_btn {
-    position: absolute;
-    top: 20px;
-    right: 25px;
     display: block;
+    position: absolute;
+    top: 50%;
+    right: 25px;
     height: 23px;
-    cursor: pointer;
+    transform: translate(0, -50%);
+    /* cursor: pointer; */
     z-index: 3;
   }
 
@@ -330,6 +333,9 @@ footer {
   font-size: 12px;
 }
 @media screen and (max-width: 767px) {
+  .message {
+    margin-top: 200px;
+  }
   .totop_box {
     display: none;
   }
