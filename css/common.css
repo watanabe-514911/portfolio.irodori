@@ -91,6 +91,7 @@ img {
   box-sizing: border-box;
 }
 .header_logo {
+  position: absolute;
   margin-left: 25px;
   top: 50%;
   font-family: "Josefin Sans", sans-serif;
