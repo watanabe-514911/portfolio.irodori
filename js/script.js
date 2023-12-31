@@ -14,15 +14,9 @@
         var offset = $(this).offset().top;
         var scroll = $(window).scrollTop(); 
         var windowHeight = $(window).height();
-        if (scroll > offset - windowHeight + 400) {
+        if (scroll > offset - windowHeight + 200) {
           $(this).addClass("scroll-in");         
         }
       });
-    });
-    $(function(){
-      if (window.matchMedia('(max-width: 767px)').matches) {
-        if (scroll > offset - windowHeight + 150) {
-          $(this).addClass("scroll-in");         
-        }
-      } })
+    });    
   });
