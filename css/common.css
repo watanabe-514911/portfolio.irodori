@@ -91,10 +91,10 @@ img {
   box-sizing: border-box;
 }
 .header_logo {
-  position: absolute;
+  /* position: absolute; */
   margin-left: 25px;
-  top: 50%;
-  transform: translate(0, -50%);
+  /* top: 50%;
+  transform: translate(0, -40%); */
   font-family: "Josefin Sans", sans-serif;
   font-weight: 300;
   font-size: 20px;
@@ -145,7 +145,7 @@ img {
     top: 50%;
     right: 25px;
     height: 23px;
-    transform: translate(0, -50%);
+    transform: translate(0, -40%);
     /* cursor: pointer; */
     z-index: 3;
   }
