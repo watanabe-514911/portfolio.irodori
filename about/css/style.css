@@ -70,7 +70,7 @@
     font-size: 22px;
   }
   .about_heading {
-    margin: 150px 0 70px;
+    margin: 100px 0 70px;
   }
   .about_container {
     display: block;
@@ -155,7 +155,7 @@
     max-width: 160px;
   }
   .skills_title {
-    margin: 30px 0 20px;
+    margin: 10px 0 20px;
   }
   .skills_title p {
     font-size: 20px;
@@ -179,7 +179,7 @@
   margin: 0 auto;
 }
 .about_list_text {
-  margin: 15px 0 80px;
+  margin-top: 15px;
   font-size: 15px;
   line-height: 1.86;
 }
@@ -188,7 +188,7 @@
 }
 .ttl {
   position: relative;
-  margin: 80px 0 0 0;
+  margin-top: 80px;
   font-size: 23px;
 }
 .objlist {
@@ -203,9 +203,10 @@
   }
   .ttl {
     font-size: 20px;
+    margin-top: 50px;
   }
   .about_list_text {
-    margin: 20px 0 60px;
+    margin-top: 20px;
   }
   .objlist {
     top: -15px;
