@@ -453,7 +453,7 @@
 }
 .works_text {
   max-width: 500px;
-  margin: 0 auto 200px;
+  margin: 0 auto 100px;
   font-size: 15px;
   line-height: 1.6;
 }
@@ -487,7 +487,7 @@
     max-width: 315px;
   }
   .works_item {
-    margin: 50px auto 100px;
+    margin: 50px auto;
   }
   .works_item li {
     max-width: 315px;
