@@ -151,9 +151,11 @@
     max-width: 315px;
     margin: 0 auto;
   }
-  .design img,
-  .coding img {
+  .design img {
     max-width: 160px;
+  }
+  .coding img {
+    max-width: 150px;
   }
   .skills_title {
     margin: 10px 0 20px;
@@ -170,7 +172,7 @@
   .objdesign,
   .objcoding {
     position: absolute;
-    left: 90px;
+    left: 50px;
     top: -15px;
   }
 }

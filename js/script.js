@@ -15,8 +15,14 @@
         var scroll = $(window).scrollTop(); 
         var windowHeight = $(window).height();
         if (scroll > offset - windowHeight + 400) {
-          $(this).addClass("scroll-in");
+          $(this).addClass("scroll-in");         
         }
       });
     });
+    $(function(){
+      if (window.matchMedia('(max-width: 767px)').matches) {
+        if (scroll > offset - windowHeight + 150) {
+          $(this).addClass("scroll-in");         
+        }
+      } })
   });
