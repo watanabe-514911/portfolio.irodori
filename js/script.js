@@ -14,7 +14,7 @@
         var offset = $(this).offset().top;
         var scroll = $(window).scrollTop(); 
         var windowHeight = $(window).height();
-        if (scroll > offset - windowHeight + 200) {
+        if (scroll > offset - windowHeight + 50) {
           $(this).addClass("scroll-in");         
         }
       });
