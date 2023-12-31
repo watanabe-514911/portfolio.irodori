@@ -475,8 +475,7 @@
   display: none;
 }
 @media screen and (max-width: 767px) {
-  .row,
-  .column {
+  .row {
     display: none;
   }
   .works_mockup {
