@@ -39,10 +39,8 @@
   position: relative;
   width: 100%;
 }
-h2 {
-  left: calc(50% + 20%);
-}
 .FV {
+  left: calc(50% + 20%);
   font-size: 70px;
 }
 #sp_home {
