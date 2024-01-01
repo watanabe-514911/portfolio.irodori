@@ -39,8 +39,10 @@
   position: relative;
   width: 100%;
 }
-.FV {
+h2 {
   left: calc(50% + 20%);
+}
+.FV {
   font-size: 70px;
 }
 #sp_home {
@@ -228,6 +230,7 @@ h3 {
   transition: all 0.5s; /*拡大や透過のアニメーションを0.5秒で行う*/
   filter: grayscale(100%);
 }
+
 .slider .slick-slide.slick-center {
   transform: scale(1); /*中央の画像のサイズだけ等倍に*/
   filter: grayscale(0%);
