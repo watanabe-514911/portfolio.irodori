@@ -187,7 +187,7 @@
 /* 私ってこんな人 */
 .about_list {
   max-width: 500px;
-  margin: 0 auto;
+  margin: 300px auto 0;
 }
 .about_list_text {
   margin-top: 15px;

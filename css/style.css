@@ -32,7 +32,6 @@
 #splash_text svg {
   border-radius: 20px;
 }
-
 #home {
   position: relative;
 }
@@ -40,13 +39,14 @@
   position: relative;
   width: 100%;
 }
-h2 {
+.FV {
   left: calc(50% + 20%);
+  font-size: 70px;
 }
-
 #sp_home {
   display: none;
 }
+
 /* スクロールバー */
 .scrolldown1 {
   position: absolute;
@@ -55,14 +55,11 @@ h2 {
   height: 110px; /*全体の高さ*/
   width: 22px;
 }
-
 /*Scrollテキストの描写*/
 .scrolldown1 span {
-  /*描画位置*/
   position: absolute;
   left: 10px;
   top: 40px;
-  /*テキストの形状*/
   color: #333;
   font-size: 0.7rem;
   letter-spacing: 0.05em;
@@ -75,10 +72,8 @@ h2 {
 /* 線の描写 */
 .scrolldown1::after {
   content: "";
-  /*描画位置*/
   position: absolute;
   top: 0;
-  /*線の形状*/
   width: 1px;
   height: 80px;
   background: #333;
@@ -120,7 +115,6 @@ h2 {
     width: 100%;
     margin: 30px auto;
   }
-
   .scrolldown1 {
     /*描画位置※位置は適宜調整してください*/
     position: absolute;
@@ -219,27 +213,21 @@ h3 {
   }
 }
 /* ワークス */
-/* .works h3 {
-  margin-bottom: 50px;
-} */
 .slider {
   display: flex;
 }
 .slider {
   margin: 0 auto;
 }
-
 .slider img {
   width: 20vw; /*スライダー内の画像を60vwにしてレスポンシブ化*/
   height: auto;
 }
-
 .slider .slick-slide {
   transform: scale(0.8); /*左右の画像のサイズを80%に*/
   transition: all 0.5s; /*拡大や透過のアニメーションを0.5秒で行う*/
   filter: grayscale(100%);
 }
-
 .slider .slick-slide.slick-center {
   transform: scale(1); /*中央の画像のサイズだけ等倍に*/
   filter: grayscale(0%);

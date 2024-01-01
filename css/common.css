@@ -110,6 +110,7 @@ img {
 /* ヘッダーホバーアニメーション */
 .pc_nav ul li a {
   position: relative;
+  padding-bottom: 5px;
 }
 .pc_nav ul li a::after {
   content: "";
@@ -264,6 +265,7 @@ h2 {
   text-align: center;
 }
 .totop a {
+  padding-bottom: 5px;
   font-size: 14px;
 }
 /* 最上部へホバーアニメーション */
@@ -310,6 +312,7 @@ footer {
 /* フッターホバーアニメーション */
 .footer_nav ul li a {
   position: relative;
+  padding-bottom: 5px;
 }
 .footer_nav ul li a::after {
   content: "";
