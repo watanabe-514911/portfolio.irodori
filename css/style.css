@@ -199,9 +199,9 @@ h3 {
     position: relative;
     text-align: center;
   }
-  .message_home {
+  /* .message_home {
     width: 100px;
-  }
+  } */
   .more {
     display: inline-block;
     position: relative;

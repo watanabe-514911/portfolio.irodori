@@ -602,6 +602,8 @@
 @media screen and (max-width: 767px) {
   .back {
     margin-top: 160px;
+  }
+  .btnback img {
     width: 100px;
   }
 }

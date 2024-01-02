@@ -256,7 +256,7 @@ h2 {
   top: 50%;
   left: calc(50% - 100px);
   transform: translate(-50%, -50%);
-  width: 100px;
+  width: 145px;
 }
 .message:hover {
   opacity: 0.5;
@@ -336,6 +336,9 @@ footer {
 @media screen and (max-width: 767px) {
   .message {
     margin-top: 200px;
+  }
+  .btnmessage img {
+    width: 100px;
   }
   .totop_box {
     display: none;
