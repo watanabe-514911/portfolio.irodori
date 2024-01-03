@@ -40,9 +40,24 @@
   width: 100%;
 }
 .FV {
+  position: absolute;
+  top: 50%;
+  left: calc(50% + 20%);
+  transform: translate(-50%, -50%);
+  font-family: "Lato", sans-serif;
+  font-size: 70px;
+  font-weight: 200;
+}
+@media screen and (max-width: 767px) {
+  .FV {
+    left: calc(50% - 80px);
+    font-size: 40px;
+  }
+}
+/* .FV {
   left: calc(50% + 20%);
   font-size: 70px;
-}
+} */
 #sp_home {
   display: none;
 }
