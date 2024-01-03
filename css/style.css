@@ -39,7 +39,7 @@
   position: relative;
   width: 100%;
 }
-.FV {
+/* .FV {
   position: absolute;
   top: 50%;
   left: calc(50% + 20%);
@@ -53,11 +53,11 @@
     left: calc(50% - 80px);
     font-size: 40px;
   }
-}
-/* .FV {
+} */
+.FV {
   left: calc(50% + 20%);
   font-size: 70px;
-} */
+}
 #sp_home {
   display: none;
 }
