@@ -262,14 +262,7 @@ h2 {
 .message:hover {
   opacity: 0.5;
 }
-.totop {
-  text-align: center;
-  padding-bottom: 5px;
-}
-.totop a {
-  padding-bottom: 5px;
-  font-size: 14px;
-}
+
 /* 最上部へホバーアニメーション */
 .totop_wrap {
   position: relative;
@@ -281,6 +274,11 @@ h2 {
   position: absolute;
   left: 50%;
   transform: translate(-50%, -50%);
+  text-align: center;
+}
+.totop a {
+  padding-bottom: 5px;
+  font-size: 14px;
 }
 .totop a::after {
   content: "";
@@ -294,6 +292,7 @@ h2 {
   transform: scale(0, 1);
   transform-origin: left top;
 }
+
 .totop a:hover::after {
   transform: scale(1, 1);
 }
